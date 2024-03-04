@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerala Logistics</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <img src="img/Logo.png" alt="Kerala Logistics Logo" class="logo">
+            <h1>Kerala Logistics</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#our-events">Our Events</a></li>
+                    <li><a href="#attending-events">Attending Events</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Kerala Logistics</h2>
+            <p>Kerala Logistics, a newly launched virtual trucking company in TruckersMP, brings a fresh approach to the digital highways of the simulation world. With a focus on professionalism and camaraderie, Kerala Logistics aims to carve its path in the virtual transportation industry. Leveraging the latest technology and a passion for excellence, the company endeavors to provide a platform for trucking enthusiasts to come together, participate in convoys, and foster a vibrant community spirit. Join Kerala Logistics on the digital roads, where every journey is an adventure.</p>
+        </div>
+    </section>
+
+    <section id="our-events" class="section">
+        <div class="container">
+            <h2>Our Events</h2>
+            <div class="event-wrapper" id="events">
+                <!-- Events will be dynamically added here -->
+            </div>
+        </div>
+    </section>
+
+    <section id="attending-events" class="section">
+        <div class="container">
+            <h2>Attending Events</h2>
+            <div class="event-wrapper" id="aevents">
+                <!-- Attending events will be dynamically added here -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <p>For inquiries and support, please join our Discord server:</p>
+                <a href="https://discord.com/invite/FRDxXkVJt8" class="discord-link">Join Our Discord</a>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Kerala Logistics. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="mtcevent.js"></script>
+    <script>
+        window.onload = async () => {
+            await updateEvents();
+            await aupdateEvents();
+        };
+    </script>
+</body>
+
+</html>
